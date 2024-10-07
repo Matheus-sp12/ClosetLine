@@ -28,6 +28,7 @@ body {
 nav {
     display: none;
     margin: 2px 1px;
+   
 
     .sidebar {
     position: fixed;
@@ -47,6 +48,12 @@ nav {
 }
 .sidebar-overlay.active {
     display: block;
+
+}
+
+.open-btn {
+    font-size: 20px;
+    border-radius: 5px;
 }
 }
 /* Estilos específicos para telas menores */
