@@ -27,6 +27,7 @@ body {
 
 nav {
     display: none;
+    margin: 2px 1px;
 
     .sidebar {
     position: fixed;
@@ -42,6 +43,7 @@ nav {
 
 .sidebar.active {
     left: 0;
+    padding: 0;
 }
 .sidebar-overlay.active {
     display: block;
@@ -62,7 +64,21 @@ nav {
     }
 
     nav {
-        display: block
-    }
+        display: block;
 
+        .sidebar {
+           display: flex;
+           flex-direction: column;
+           gap: 20px;
+            .close-btn {
+                font-size: 40px;
+            }
+
+            a {
+                text-decoration: none;
+                color: #e0e0e0;
+                cursor: pointer;
+            }
+        }
+    }
 }

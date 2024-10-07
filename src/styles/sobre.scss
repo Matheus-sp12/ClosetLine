@@ -105,14 +105,15 @@ body {
     }
 
     &__question {
+        padding: 0;
         &__item {
-            background-color: #640db4;
+            background-color: config.$corBackgroundFaq;
             margin-bottom: 16px;
             list-style: none;
 
             &__question {
                 color: #fff;
-                font-size: 20px;
+                font-size: 22px;
                 padding: 24px;
                 display: block;
                 cursor: pointer;
@@ -149,5 +150,11 @@ body {
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .faq__question__item__question{
+        font-size: 18px;
     }
 }
