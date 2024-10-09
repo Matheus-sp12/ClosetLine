@@ -1,0 +1,118 @@
+@use '../styles/config.scss';
+
+footer {
+    width: 100%;
+    max-width: 100%;
+    background-color: black;
+    color: white;
+
+
+    .footer-div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        width: 80%;
+        margin: 0 auto;
+
+
+        .footerList {
+            list-style: none;
+
+            .footerList-pag {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+
+                img {
+                    width: 40px;
+                }
+            }
+
+            .footerLine {
+                margin: 10px 0;
+
+                .footerSubTtittle {
+                    font-size: 18px;
+                    font-family: config.$fontTittle;
+                    margin: 5px auto;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 20px;
+
+
+                }
+
+                a:hover {
+                    color: rgb(147, 155, 162);
+                    text-decoration: underline;
+                }
+            }
+
+        }
+
+        .footerList-modify {
+            display: block;
+
+            .footerList-div {
+                display: flex;
+                list-style: none;
+            }
+
+            .footerLine-modify {
+                padding: 10px;
+                list-style: none;
+
+                a {
+                    font-size: 30px;
+                    color: white;
+
+                    :hover {
+                        color: rgb(148, 159, 159);
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-logo {
+        padding-top: 15px;
+        border-top: 1px solid rgba(164, 159, 159, 0.696);
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+
+        p {
+            font-size: 14px;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    footer {
+        padding-top: 30px;
+
+        .footer-div {
+            display: block;
+            justify-content: center;
+            width: 100%;
+            margin: 10px auto;
+
+        }
+        p {
+            font-size: 14px;
+        }
+
+    }
+}
