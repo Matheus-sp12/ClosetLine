@@ -609,13 +609,34 @@ body {
 }
 
 .head {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  width: 80%;
 }
 .head .logo {
   font-family: "Dancing Script", serif;
   font-size: 50px;
+}
+.head .menu {
   text-align: center;
+}
+.head .menu .menu-list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+.head .menu .menu-list .menu-line a {
+  text-decoration: none;
+  font-size: 20px;
+  color: blue;
+}
+.head .menu .menu-list .menu-line .menu-sub-list {
+  display: none;
+}
+.head .menu .menu-list .menu-line .menu-sub-list :active {
+  display: block;
 }
 
 nav {
