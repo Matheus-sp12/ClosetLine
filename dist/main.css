@@ -695,6 +695,9 @@ nav .open-btn {
     color: #e0e0e0;
     cursor: pointer;
   }
+  .menu {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
